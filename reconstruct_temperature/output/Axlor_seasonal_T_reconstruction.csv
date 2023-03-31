@@ -1,0 +1,10 @@
+Layer,type,d18O_dw,d18O_dw_error,T,T_error
+III,Summer,-4.4,1.2,22.6,2.7
+IV,Summer,-1.7,2.3,28.5,5.1
+VI,Summer,-2.8,1.7,26.1,3.8
+III,Winter,-12.6,1.2,-2.6,2.3
+IV,Winter,-15.7,2.3,-8.5,4.5
+VI,Winter,-13.6,1.7,-4.5,3.3
+III,Mean,-7.9,1.2,11.4,2.4
+IV,Mean,-6.8,2.3,13.6,4.6
+VI,Mean,-7.9,1.6,11.4,3.2
