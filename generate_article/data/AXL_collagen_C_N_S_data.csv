@@ -1,0 +1,67 @@
+Layer,museum_code,Sample_code,Taxon,Element,d13C,d15N,d34S,coll_yield_perc,perc_C,perc_N,perc_S
+III,AX.11E.255.129,AXL54,Bos/Bison sp,Atlas,-19.9,4.4,7.6,2.8,39.6,14.4,0.14
+III,AX.11E.255.128,AXL55,Bos/Bison sp,Tibia ,-20.2,6.5,13.1,2.5,38.8,14.1,0.15
+III,AX.11E.255.127,AXL56,Bos/Bison sp,Metacarpal ,-20.2,6.1,12.6,2.5,31.9,11.6,0.12
+III,AX.11E.255.131,AXL57,Bos/Bison sp,Axis,-20.1,4.6,9.2,1.2,30.3,10.4,0.14
+III,AX.11E.255.137,AXL58,Bos/Bison sp,2nd phalanx,-20.3,6,13.1,2.6,34.1,12.5,0.13
+III,AX.11E.240.101,AXL62,Bos/Bison sp,Carpal I,-20.2,7.1,9.6,7.7,45.6,16.8,0.18
+III,AX.11E.240.97,AXL63,Bos/Bison sp,Tibia ,-20.1,7.6,12.6,4.6,38.3,14.1,0.15
+III,AX.11E.240.94+95,AXL64,Bos/Bison sp,Metacarpal ,-20.2,7.1,10.8,4.1,37.9,13.8,0.16
+III,AX.11E.255.130,AXL61,Equus ferus,Humerus,-21.3,3.6,8.3,1.8,20.7,7.3,0.09
+III,AX.11E.240.96,AXL67,Cervus elaphus,Radius,-20.2,2.2,11.0,2.1,40,14.7,0.17
+IV,AX.11C.290.139,AXL68,Bos/Bison sp,Carpal radial,-19.9,8.7,9.6,2.4,26.3,9.6,0.14
+IV,AX.11D.290.292,AXL69,Bos/Bison sp,Femur,-20,6.2,11.6,2.6,38.2,14,0.16
+IV,AX.11F 300. 69,AXL72,Bos/Bison sp,Metatarsal ,-20.9,4,7.3,8.7,45.7,16.9,0.15
+IV,AX.11F 300. 60,AXL73,Bos/Bison sp,Tibia ,-20.3,5.2,7.8,2.5,34.4,12.4,0.13
+IV,AX.11D 350. 159,AXL74,Bos/Bison sp,1st phalanx,-20.3,8.3,11.0,7.4,43.1,15.9,0.17
+IV,AX.11D 350. 150,AXL75,Bos/Bison sp,1st phalanx,-19.9,3.9,11.5,11.3,44.3,16.5,0.16
+IV,AX.11D 350. 148,AXL76,Bos/Bison sp,Ulna,-19.8,6.8,12.9,9.0,44.4,16.4,0.16
+IV,AX.11B 300. 45,AXL50,Equus ferus,1st phalanx,-19.6,6.4,12.2,3.2,36.1,12.8,0.18
+IV,AX.11B 300. 40,AXL51,Equus ferus,Humerus,-19.6,7.6,12.0,3.5,38.2,13.6,0.19
+IV,AX.11C.290.147,AXL38,Cervus elaphus,Carpal,-20.1,2.9,14.1,3.1,37.9,13.5,0.16
+IV,AX.11C.290.149,AXL39,Cervus elaphus,2nd phalanx,-20,3.1,13.7,6.7,41.1,14.7,0.17
+IV,AX.11C.290.152,AXL40,Cervus elaphus,2nd phalanx,-20.4,2.4,11.8,1.9,38.4,13.6,0.14
+IV,AX.11C.300. 175,AXL41,Cervus elaphus,Metacarpal ,-19.8,3,12.7,6.5,42.7,15.1,0.15
+IV,AX.11C.300. 178,AXL42,Cervus elaphus,Carpal,-19.6,5.7,9.4,6.7,43,15.2,0.17
+IV,AX.11C.300. 179,AXL43,Cervus elaphus,2nd phalanx,-20,3.2,12.5,4.6,35.9,12.7,0.18
+IV,AX.11C.300. 181,AXL44,Cervus elaphus,3rd phalanx,-20.2,3,13.1,3.5,30.7,11,0.17
+IV,AX.11C.300. 184,AXL45,Cervus elaphus,2nd phalanx,-20.2,3.4,14.2,6.2,36.1,12.7,0.14
+IV,AX.11B 290. 25,AXL46,Cervus elaphus,Astragalus,-20,3.2,10.0,2.2,39.8,14,0.1
+IV,AX.11B 290. 27,AXL47,Cervus elaphus,Tibia ,-19.5,2.9,12.3,2.3,36,12.7,0.15
+IV,AX.11B 290. 28,AXL48,Cervus elaphus,Metacarpal ,-19.9,2.8,9.6,4.4,35,12.4,0.15
+IV,AX.11B 290. 30,AXL49,Cervus elaphus,1st phalanx,-20.2,2.2,13.9,4.0,41.1,14.4,0.16
+VI,AX.11B.330.229,AXL78,Bos/Bison sp,Tibia ,-20.3,7,12.7,5.4,42.2,15.6,0.16
+VI,AX.11B.330.67,AXL79,Bos/Bison sp,Metapodial,-20.3,6.2,11.1,6.2,38,14,0.18
+VI,AX.11B.330.66,AXL80,Bos/Bison sp,Radius,-20.3,5.6,11.5,3.9,31,11.4,0.16
+VI,AX.11B.345.256,AXL82,Bos/Bison sp,Pelvis,-19.8,7,10.7,3.2,34.9,13,0.13
+VI,AX.11B.345.250,AXL83,Bos/Bison sp,Radius,-20.2,5.8,10.2,5.4,41.9,15.5,0.15
+VI,AX.11B.350.294,AXL84,Bos/Bison sp,Radius,-20,6.7,9.6,3.8,34.8,12.9,0.14
+VI,AX.11B.350.295,AXL85,Bos/Bison sp,Rib,-20.4,5.3,8.9,1.3,21.1,7.5,0.11
+VI,AX.11C.330.Varios,AXL13,Equus ferus,Tibia ,-21,3.7,9.4,3.6,39.4,14.1,0.14
+VI,AX.11B.345.251,AXL20,Equus ferus,radius,-21.3,3.1,9.0,4.2,35.7,12.7,0.15
+VI,AX.11B.330.257,AXL22,Equus ferus,Tibia ,-19.2,5.1,9.2,3.4,38.5,13.9,0.15
+VI,AX.11C.330.444,AXL12,Cervus elaphus,Tibia ,-20,3.3,12.3,2.7,32.6,11.6,0.14
+VI,AX.11B.350.296,AXL14,Cervus elaphus,Vertebra,-20,6.3,9.4,4.2,33.6,12.2,0.165
+VI,AX.11B.350.306,AXL16,Cervus elaphus,tarsal,-20.7,3.2,12.8,6.3,38.8,14,0.17
+VI,AX.11B.350.299,AXL17,Cervus elaphus,Metatarsal ,-20.2,3.6,11.9,3.3,39.7,14.2,0.17
+VI,AX.11B.350.308,AXL18,Cervus elaphus,3rd phalanx,-20.5,4.1,10.9,3.6,22.8,8.1,0.17
+VI,AX.11B.345.252,AXL21,Cervus elaphus,Vertebra,-19.9,6.2,9.9,2.9,35.4,13,0.15
+VI,AX.11B.345.261,AXL23,Cervus elaphus,2nd phalanx,-19.9,2.5,11.7,3.5,28.5,10.4,0.15
+VI,AX.11B.345.266,AXL24,Cervus elaphus,2nd phalanx,-20.2,2.5,7.8,6.8,42,15.3,0.15
+VI,AX.11B.375.109,AXL25,Cervus elaphus,Metatarsal ,-20.3,2.9,12.3,2.9,37.4,13.5,0.15
+VI,AX.11B.375.112,AXL26,Cervus elaphus,Carpal,-19.9,4,10.4,4.6,39.7,14.4,0.15
+VI,AX.11B.375.114,AXL27,Cervus elaphus,1st phalanx,-20.1,3,11.4,2.9,41.5,15,0.16
+VI,AX.11B.355.83,AXL28,Cervus elaphus,radius,-19.9,3.1,12.7,4.6,35.7,13,0.2
+VI,AX.11C.345. 213,AXL30,Cervus elaphus,carpal/tarsal,-20.3,3.1,1.8,8.7,43.6,15.8,0.16
+VI,AX.11C. 380. 315 & 316,AXL31,Cervus elaphus,Metacarpal ,-20.3,1.9,12.1,2.5,26.9,9.7,0.16
+VI,AX.11C. 380. 317,AXL32,Cervus elaphus,Carpal II+III,-20.3,3.6,12.4,6.7,42.8,15.5,0.16
+VIII,AX.11C.425-510,AXL01,Cervus elaphus,Metacarpal ,-20.3,2.4,10.6,2.4,27.1,9.9,0.16
+VIII,AX.11B.425.414,AXL03,Cervus elaphus,Metatarsal ,-20.5,3,12.1,1.5,45.2,17.5,0.17
+VIII,AX.11B.430.456,AXL04,Cervus elaphus,radius,-20.7,2.4,12.4,3.8,41.5,16.4,0.18
+VIII,AX.11B.430.453,AXL05,Cervus elaphus,ulna,-20.3,3.1,11.1,4.5,38.2,15.1,0.17
+VIII,AX.11B.426.428,AXL07,Cervus elaphus,Mandible,-21.6,2.7,NA,0.3,23.9,8.5,NA
+VIII,AX.11B.426.436,AXL09,Cervus elaphus,2nd phalanx,-20.4,3.8,9.0,3.6,36.3,12.7,0.13
+VIII,AX.11C. 400.350,AXL34,Cervus elaphus,rib,-20.5,3,13.0,2.2,25.5,9.2,0.17
+VIII,AX.11C. 400.351,AXL35,Cervus elaphus,Radio/ulna,-19.7,6.3,11.8,4.9,41.1,14.7,0.15
+VIII,AX.11C. 400.352,AXL36,Cervus elaphus,Metacarpal ,-20.3,3.1,9.4,1.4,25.6,9.2,0.12
+VIII,AX.11C. 400.356,AXL37,Cervus elaphus,Metatarsal ,-20,3.7,12.9,2.7,33.7,12.2,0.16

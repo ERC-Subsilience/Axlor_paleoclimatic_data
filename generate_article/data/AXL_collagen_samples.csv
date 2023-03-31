@@ -1,0 +1,12 @@
+Layer,Taxon,n_cn,n_s
+III,Bos/Bison sp.,8,8
+III,Cervus elaphus,1,1
+III,Equus ferus,1,1
+IV,Bos/Bison sp.,7,7
+IV,Cervus elaphus,12*,12
+IV,Equus ferus,2*,2
+VI,Bos/Bison sp.,7,7
+VI,Cervus elaphus,15*,15
+VI,Equus ferus,3*,3
+VIII,Cervus elaphus,10*,9
+Total,,66,65
