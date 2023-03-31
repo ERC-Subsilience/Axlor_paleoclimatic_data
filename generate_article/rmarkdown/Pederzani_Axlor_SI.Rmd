@@ -1,0 +1,626 @@
+---
+author:
+title: "Supplementary Materials for"
+subtitle: "Late Pleistocene Neanderthal exploitation of stable and mosaic ecosystems in northern Iberia shown by multi-isotope evidence"
+bibliography: ../common/AXL_library.bib
+csl: ../common/quaternary_research.csl
+output: 
+  officedown::rdocx_document:
+    reference_docx: ../common/reference_SI.docx
+    plots:
+      style: Normal
+      align: left
+      caption:
+        style: Caption1
+        pre: 'Figure S'
+        sep: ': '
+        fp_text: !expr officer::fp_text_lite(bold = FALSE)
+    tables:
+      caption:
+        style: Caption1
+        pre: 'Table S'
+        sep: ': '
+        fp_text: !expr officer::fp_text_lite(bold = FALSE)
+editor_options:
+  chunk_output_type: console
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../output/markdown_out_documents") }) 
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = F, message = F, warning = F, fig.pos = 'H', tab.topcaption = TRUE, fig.path = "../output/markdown_out_figures/", dev=c('png'))
+
+library("ggplot2")
+library("dplyr")
+library("tidyr")
+library("Metrics")
+library("flextable")
+library("stringr")
+library("ggpubr")
+
+```
+
+
+::: {custom-style=affiliations}
+Sarah Pederzani^1^, Kate Britton, Jennifer Rose Jones, Lucía Agudo Perez, Jeanne Marie Geiling, Ana Belen Marín-Arroyo^2^
+<br>
+<br>
+^1^Corresponding author; Email address: scpederz&#64;ull.edu.es  
+^2^Corresponding author; Email address: anabelen.marin&#64;unican.es
+:::
+<br>
+<br>
+
+::: {custom-style=contentlist}
+**This PDF file includes:**
+
+**Supplementary Figures S1 - S8**
+
+Figure S1: Results of OxA-40151 radiocarbon date calibration.  
+Figure S2: Cross validation of $\delta$^18^O~phos~ prediction.  
+Figure S3: Alternative $\delta$^18^O time series with simulated $\delta$^18^O~phos~ prediction error.  
+Figure S4: Inverse model outcomes for alternative $\delta$^18^O time series.  
+Figure S5: Extracted summer peak and winter trough values from alternative $\delta$^18^O time series.  
+Figure S6: Summer, mean and winter $\delta$^18^O~dw~ estimates.  
+Figure S7: Sequential $\delta$^18^O~carb~ and $\delta$^13^C~carb~ data.  
+Figure S8: Correlation of $\delta$^18^O~carb~ and $\delta$^13^C~carb~ in annual means.   
+
+**Supplementary Tables S1 - S2**
+
+Table S1: Quality control indicators for OxA-40151 collagen extract.  
+Table S2: Results of $\delta$^18^O~dw~ and palaeotemperature estimation.  
+
+
+**Other Supplementary Material for this manuscript includes the following:**
+
+Data and code to reproduce the manuscript files, figures and analyses are available at https://github.com/ERC-Subsilience. 
+:::
+
+\newpage
+
+**Supplementary Text**
+
+# Assumptions and basis of the oxygen isotope palaeothermometer
+
+Palaeotemperature reconstructions based on $\delta$^18^O of ungulate dental enamel have their basis in the linear relationships between $\delta$^18^O~enamel~ and $\delta$^18^O of drinking water ($\delta$^18^O~dw~), and between environmental water $\delta$^18^O and air temperature (see main text section 'Oxygen isotope analyses as a proxy of seasonal climate'). These relationships are well documented in modern animals and waters, but their application to archaeological specimens to reconstruct past climates is predicated on a few inherent assumptions that we discuss briefly here. Firstly, the exact numerical relationship between environmental water $\delta$^18^O and air temperature is to a certain degree dependent on atmospheric circulation systems. A sufficient degree of stability in atmospheric circulation reaching back into the European Late Pleistocene to maintain a stable slope of the $\delta$^18^O~precip~ - air temperature relationship has been shown using circulation models as well as by comparisons of palaeotemperature estimates with $\delta$^18^O measurements of Pleistocene groundwaters [@Rozanski1985; @Rozanski1992; @Zuber2004; @Kaspar2005; @Tutken2007]. The relationship between $\delta$^18^O~enamel~ and $\delta$^18^O~dw~ is similarly thought to be robust on these time scales, as there is no evidence to suggest any pronounced metabolic differences that could cause changes in drinking requirements in species of interest such as horses or large bovids across the relatively short time scales since the Late Pleistocene [@Maloiy1973; @Arias2011; @McHugh1958; @Winchester1956; @Groenendyk1988; @Scheibe1998; @Houpt2000; @Hinton1978]. Other palaeotemperature estimation prerequisites should be validated for each study area. This includes the assumption that drinking water sources that are used by study animals are predominantly fed by local precipitation and are isotopically closely tied to it. The role of aridity in affecting $\delta$^18^O of potential water sources should also be checked for each study setting. 
+
+# Silver phosphate preparation
+
+Approximately 5 mg of tooth enamel powder of each sample were weighed into 2 mL Eppendorf microcentrifuge tubes. Samples were agitated in 0.4 mL of 2 M hydrofluoric acid (HF) for 24 hours to digest bioapatite and remove calcium from the solution as CaF~2~. After digestion, samples were centrifuged (12000 rpm for 5 Min) to separate the phosphate containing solution from CaF~2~ precipitate in the solution transferred to a clean microcentrifuge tube. To maximise phosphate recovery the CaF~2~ precipitate was washed once with 0.1 mL MilliQ ultra pure water and the wash added to the phosphate containing solution. The sample solution was then titrated to neutrality as indicated by the colour change point of Bromothymolblue indicator using 25% ammonia solution (NH~4~OH). 60 $\mu$L of NH~4~OH were first added to each sample using an automatic pipette and each solution then slowly brought to the colour change point (yellow to green) using individual drops of NH~4~OH added with a 100 $\mu$L Hamilton Microliter fixed needle syringe (Hamilton Bonaduz AG, Switzerland). From the neutralised solutions, Ag~3~PO~4~ was crash precipitated by addition of 0.4 mL 2 M silver nitrate (AgNO~3~) solution. The resulting precipitate was separated from the supernatant solution by centrifugation (12000 rpm for 5 Min) and the remaining silver nitrate solution removed. The silver phosphate precipitate was then washed four times with MilliQ ultrapure water using centrifugation and vortex mixing steps between rinses to eliminate any silver nitrate from the sample. Silver phosphate samples were then dried overnight at 50 °C and stored over desiccant until further analysis.
+
+# Extraction and stable isotope analysis of bone collagen
+
+Bone sub-samples between 0.5-0.8 g were cleaned by mechanical abrasion to remove any possible surface contamination and starting weight of the samples were recorded. Cleaned specimens were then placed in 0.5 M HCL at 6–8 °C for between 3 and 14 days until the bone had fully demineralised. Samples were checked regularly, and acid was changed regularly every (typically every 48h) to maintain the reaction. When fully demineralised, samples were washed three times using Milli-Q ultrapure water to remove any residual acid. Samples were then gelatinised in a weak acidic solution (pH 3 HCL) at 70 °C for 48 h to allow the collagen to hydrolyse. The samples were then filtered using 5–8 μm Ezee biological filters, and were placed into a -20°C freezer for at least 24h prior to lyophilisation. Frozen collagen samples were then freeze-dried for approximately 56 h. The resulting collagen was weighed to calculate the collagen yield of each specimen as an indicator of preservation.
+
+This method differs slightly from the collagen extraction method used for the @Jones2018b study where an additional ultrafiltration step was used to the isolate the >30 ka collagen fraction. Studies have shown that there is no difference in $\delta$^13^C and $\delta$^15^N values achieved from bone collagen extracted using ultrafiltration versus non-ultrafiltered if bone specimens are well preserved [@Sealy2014],  such as those from Axlor. Ultrafiltration has the added limitation of reducing collagen yields, which may prevent sufficient collagen being available for $\delta$^34^S analysis which typically requires >5mg of collagen for analysis.
+
+For carbon and nitrogen stable isotope analysis, samples were weighed into tin capsules and introduced into a Europa Scientific elemental analyser, where conversion to CO~2~ and N~2~ was achieved using a combustion reactor temperature of 1000 °C and a reduction reactor temperature of 600 °C. Gas separation was achieved using a packed GC column held at 65 °C, and separated gases introduced into a Europa Scientific 20-20 isotope ratio mass spectrometer. The calibration procedure and measures of analytical precision are described in the article main text. 
+
+For sulphur stable isotope analysis,samples were weighed into tin capsules together with vanadium pentoxide as a combustion catalyst and introduced into a Europa Scientific elemental analyser, where conversion to SO~2~ was achieved using a combustion reactor temperature of 1080 °C in the presence of Tungstic oxide and zirconium oxide followed by reduction over copper wires. Water was removed using a Nafion membrane and gas separation achieved using a packed GC column held at 32 °C. SO~2~ was then introduced into a Europa 20-20 isotope ratio mass spectrometer to obtain $\delta$^34^S measurements. The calibration procedure and measures of analytical precision are described in the article main text. 
+
+# Radiocarbon dating methodology
+
+Collagen extraction was conducted following methods in @Brock2010, using a drilled bone powder sample, which was demineralised over night using 0.5 M hydrochloric acid (HCl) at 5°C. Humic acids were removed using 0.1 M sodium hydroxide solution (NaOH) for 30 minutes at room temperature followed by a wash in 0.5 M HCl for 1 hour. Collagen was then gelatinised in 0.001 M HCl at 70°C for 20 hours and filtered using EZEE filter (45-90 $\mu$m) followed by ultrafiltration using cleaned 30 kDa MWCO Vivaspin 15 ultrafilters. Collagen was combusted using an elemental analyser (ANCA-GSL) coupled to a Sercon 20-20 isotope ratio mass spectrometer for carbon and nitrogen stable isotope analyses, and excess CO~2~ was graphitised in the presences of an iron catalyst and dated via Accelerator Mass Spectrometry. 
+
+# Supplementary Figures
+
+
+```{r radiocarbon, fig.id = "radiocarbon", fig.cap = "Calibrated age range of the newly dated bone specimen from Level III. Calibration was performed using OxCal version 4.4 [@Ramsey2009] and the IntCal20 data set [@Reimer2020]. ", fig.height = 3.54, fig.width = 5.5}
+
+knitr::include_graphics("rmd_images_import/OxA_40151_calibrated.png")
+
+```
+
+
+\newpage
+```{r pred_vs_ms, fig.cap = "A comparison of directly measured $\\delta^{18}$O$_{\\textrm{phos}}$ values with those predicted from bioapatite carbonate shows good correlation between the two, validating the possibility of the prediction with reasonable accuracy and precision. "}
+
+# read Axlor d18O data
+
+axl_odat <- read.csv("../data/AXL_carb_phos_d18O.csv")
+
+# first test accuracy of a linear model based on Axlor d18Ocarb-d18Ophos data pairs
+
+# make df of only data points with both d18O_carb and d18O_phos
+
+axl_cp <- axl_odat %>%
+  drop_na(d18O_phos)
+
+# split data into training data (2/3 of points) and validation data (1/3 of points)
+
+n_training <- floor(0.6*nrow(axl_cp)) # set number of training data points to 2/3 of data set
+
+# randomly split the data set
+
+set.seed(7) # set seed for reproducing results
+
+axl_training_rows <- sample(seq_len(nrow(axl_cp)),size = n_training) # draw random row numbers for training data set
+
+axl_training <- axl_cp[axl_training_rows,] # write designated rows into training data
+
+axl_validation <- axl_cp[-axl_training_rows,] # write remaining rows into validation data
+
+# make linear model for training data and predict d18Ophos for validation data
+
+attach(axl_training)
+
+# run linear model for Axlor training data
+lm_axl_training <- lm(d18O_phos ~ d18O_carb)
+
+# make data frame of only d18Ocarb
+validation_carb <- data.frame(d18O_carb = axl_validation$d18O_carb)
+
+# predict d18Ophos for validation data using model made with training data
+axl_validation_prediction <- predict(lm_axl_training, newdata = validation_carb, 
+                                     interval = "predict")
+
+detach(axl_training)
+
+# clean col names
+colnames(axl_validation_prediction) <- c("pred_d18O_phos", "PI_lwr", "PI_upr")
+
+# add predicted d18Ophos to original validation data set
+axl_validation_prediction <- cbind(axl_validation, axl_validation_prediction)
+
+# plot measured d18O_phos versus predicted d18O_phos
+
+lab_ms <- expression(italic(delta)^18*'O'['phos measured']*' (\u2030 VSMOW)' )
+lab_pred <- expression(italic(delta)^18*'O'['phos predicted']*' (\u2030 VSMOW)' )
+
+ggplot()+
+  theme_classic()+
+  geom_line(aes(x = 13:20, y = 13:20))+
+  geom_point(data = axl_validation_prediction, aes(x = d18O_phos, y = pred_d18O_phos), size = 3)+
+  xlim(13,20)+
+  ylim(13,20)+
+  xlab(lab_ms)+
+  ylab(lab_pred)
+
+# evaluate relationship between measured and predicted phosphate d18O
+
+pred_lm <- lm(axl_validation_prediction$pred_d18O_phos ~ axl_validation_prediction$d18O_phos)
+
+pred_lm_summary <- summary(pred_lm)
+
+```
+\newpage
+```{r pred_residuals}
+
+# calculate residuals and root square error and make residual plot
+
+axl_validation_prediction <- axl_validation_prediction %>%
+  mutate(residuals = d18O_phos - pred_d18O_phos) %>%
+  mutate(rse = sqrt((d18O_phos - pred_d18O_phos)^2))
+
+residuals_plot <- ggplot()+
+  geom_point(data = axl_validation_prediction, aes(x = d18O_phos, y = residuals), size = 3)+
+  theme_classic()
+
+# plot distribution of residuals
+
+residual_dist <- ggplot()+
+  geom_density(data = axl_validation_prediction, aes(x = residuals))+
+  theme_classic()
+
+
+# calculate root mean square error to evaluate goodness of fit
+
+axl_lm_rmse <- rmse(axl_validation_prediction$d18O_phos, axl_validation_prediction$pred_d18O_phos)
+
+```
+
+```{r create_alt_combined_phos, fig.cap = "Different combined $\\delta^{18}$O time series stitched from measured (solid symbols) and predicted (transparent symbols) $\\delta^{18}$O$_{\\textrm{phos}}$ values that are possible within the uncertainty of the prediction (here called 'Trials') were generated by simulation using the addition of random errors on the predicted values. ", fig.width = 7, fig.height = 5.5}
+
+# read combined time series data produced in main text code
+
+combined_o <- read.csv("../data/AXL_combined_phosphate_time_series.csv")
+
+# pick d18O time series for one tooth (AXL66) as an example
+
+axl66 <- combined_o %>%
+  drop_na(dist_ERJ) %>%
+  filter(Tooth == "AXL66") %>%
+  mutate(random_error_trial = "Original data")
+
+# make new object to store the randomly generated time series versions made in following code
+
+axl66_all_error_trials <- axl66
+
+# run loop to generate alternate versions of AXL66 with random error
+# random error is modelled on the residual mean square error of the d18Ophos prediction
+# determined from Axlor data in earlier code chunk
+
+for (i in 1:10) {
+  
+set.seed(i) # use set seed to reproduce results in MS, but different one for each loop
+  # so that trials are not identical
+random_error <- rnorm(n = nrow(axl66), mean = 0, sd = axl_lm_rmse) # generate random error terms for each data point of the time series
+
+axl_rnd_error <- axl66 %>%
+  mutate(random_error_trial = paste("Trial",i, sep = " ")) %>% # paste Trial name
+  mutate(pred_d18O_phos = pred_d18O_phos + random_error) %>% # apply random error to d18Ophos prediction
+  mutate(combined_phos = coalesce(d18O_phos,pred_d18O_phos)) # make new combined time series
+
+axl66_all_error_trials <- rbind(axl66_all_error_trials, axl_rnd_error) # store in object of all trials
+  
+}
+
+# reorder Trial name factor for plotting
+axl66_all_error_trials <- axl66_all_error_trials %>%
+  mutate(random_error_trial_f = factor(axl66_all_error_trials$random_error_trial, 
+                                       levels = c("Original data", "Trial 1", "Trial 2", "Trial 3", "Trial 4", "Trial 5", "Trial 6", "Trial 7", "Trial 8", "Trial 9", "Trial 10")))
+
+# set axis label
+ylab_name_o <- expression(italic(delta)^18*'O (\u2030 VSMOW)' )
+
+# plot all trials
+ggplot(axl66_all_error_trials, aes(x = dist_ERJ, y = combined_phos))+
+  theme_classic()+
+  theme(strip.background = element_rect(colour = "grey95", fill = "grey95", size = 1), 
+        panel.background=element_blank(), 
+        panel.border=element_rect(colour="grey95",size = 0.1, fill = NA))+
+  xlim(40,0)+
+  ylab(ylab_name_o)+
+  xlab("distance from ERJ (mm)")+
+  geom_line(lwd = 1.5, alpha = 0.3, color = "#46ACC8")+
+  geom_point(size = 4, alpha = 0.15, color = "#46ACC8")+
+  geom_point(aes(x = dist_ERJ, y = d18O_phos), size = 4, color = "#46ACC8")+
+  facet_wrap(. ~ random_error_trial_f)
+
+# write trial data into csv for use in main MS
+write.csv(axl66_all_error_trials, file = "../data/axl66_all_alt_phos_predictions.csv")
+
+```
+\newpage
+```{r axl66_inverse, fig.width = 7, fig.height = 5.5, fig.cap = "Inverse models were produced for all simulated $\\delta^{18}$O time series (Trials) to explore the effect of the variability between oxygen isotope sequences introduced from $\\delta^{18}$O$_{\\textrm{phos}}$ prediction uncertainty on the final $\\delta^{18}$O summer and winter values extracted from the inverse model output (grey lines represent the most likely model solution, while shaded areas show the 95% confidence interval). Note that the y-axes are not the same in all plots to preserve visibility of seasonal oxygen isotope change. " }
+
+# now look at inverse model outcomes generated from AXL66 trials
+# scripts of the inverse model procedure can be found in the 'run_inverse_model' folder of this repository 
+
+# read inverse model outcome of AXL66 trials
+psall <- read.csv("../../run_inverse_model/output/AXL66_trials_inverse_model_out_all.csv")
+
+# reorder factor of Trial names for plotting
+psall <- psall %>%
+  mutate(Trial = factor(Trial, levels=c("Original data", "Trial 1", "Trial 2", "Trial 3", "Trial 4", "Trial 5", "Trial 6", "Trial 7", "Trial 8", "Trial 9", "Trial 10")))
+
+# rename and reshape the unmodelled d18Ophos data of AXL66 trials to match format of the inverse model output
+axl66_all_error_trials <- axl66_all_error_trials %>%
+  rename(Trial = random_error_trial_f) %>%
+  mutate(Trial = factor(Trial, levels = c("Original data", "Trial 1", "Trial 2", "Trial 3", "Trial 4", "Trial 5", "Trial 6", "Trial 7", "Trial 8", "Trial 9", "Trial 10"))) %>%
+  mutate(d18O_combined_line = combined_phos) %>%
+  pivot_longer(cols = c(d18O_phos, combined_phos), names_to = "Analyte", values_to = "d18O")
+
+# plot inverse model outcomes of AXL66 trials
+ggplot(psall, aes(x = ci_length, y = dMeasd))+
+  theme_classic()+
+  theme(legend.position = "bottom", strip.background = element_rect(colour = "white", fill = "grey95", size = 1), 
+        panel.background=element_blank(), 
+        panel.border=element_rect(colour="grey95",size = 0.1, fill = NA), 
+        axis.text = element_text(size = 12), 
+        axis.title = element_text(size = 14), 
+        strip.text = element_text(size = 12))+
+  ylab(ylab_name_o)+
+  xlab("model total length (mm)")+
+  xlim(40,0)+
+  #scale_x_continuous(breaks = c(0,10,20,30,40,50,60))+
+  geom_ribbon(aes(x = ci_length, ymin = lower_CI, ymax = upper_CI, linetype = "solid"), fill = "lightgrey", alpha = 0.7)+
+  geom_line(aes(x = ci_length, y = mean, linetype = "solid"), lwd = 1, colour = "grey")+
+  scale_linetype_manual(name = "estimated input", values = c("solid"),labels = c(""))+
+  geom_line(data = axl66_all_error_trials,aes(x = dist_ERJ, y = d18O_combined_line), 
+            alpha = 0.3, lwd = 2, color = "#46ACC8")+
+  geom_point(data = axl66_all_error_trials,aes(x = dist_ERJ, y = d18O, color = Analyte, alpha = Analyte), size = 4)+
+  scale_color_manual(values = c("d18O_phos" = "#46ACC8", "combined_phos" = "#46ACC8"), 
+                     labels = c("predicted from \n carbonate", "phosphate"), 
+                     name = expression('enamel '*italic(delta)^18*'O  '))+
+  scale_alpha_manual(values = c("d18O_phos" = 1, "combined_phos" = 0.3), 
+                     labels = c("predicted from \n carbonate", "phosphate"), 
+                     name = expression('enamel '*italic(delta)^18*'O  '))+
+  facet_wrap(. ~ Trial, scales = "free_y")+
+  NULL
+
+
+```
+
+\newpage
+```{r axl66_model_eval, fig.cap = "Summer peak and winter trough $\\delta^{18}$O values extracted from the inverse models of simulated $\\delta^{18}$O time series are extremely similar between simulations with between-trial variability much lower than inverse model uncertainty. This shows that palaeotemperature relevant outcomes of the prediction and modelling procedure are largely unaffected by the uncertainty introduced through predicting $\\delta^{18}$O$_{\\textrm{phos}}$ from carbonate $\\delta^{18}$O measurements in non-peak curve areas. ", fig.width = 7, fig.height = 4}
+
+# plot palaeotemperature estimates derived from AXL66 trial inverse model output
+
+# make color palette
+axl_ectr_colors <- c("#70F0B3", "#0DA48D", "#114847")
+
+# read inverse model summer peak and winter trough data
+inv_model <- read.csv(file = "../../run_inverse_model/output/AXL66_trials_inverse_model_output_extrema.csv")
+
+# set axis labels
+xlab_trial <- expression('Simulated '*italic(delta)^18*'O time series')
+ylab_extr <- expression(italic(delta)^18*'O values extracted from inverse model')
+
+# plot
+inv_model %>%
+  mutate(Extremum = str_replace_all(Extremum, "Minimum", "Winter")) %>%
+  mutate(Extremum = str_replace_all(Extremum, "Maximum", "Summer")) %>%
+  mutate(Trial = factor(Trial, levels = c("Original data", "Trial 1", "Trial 2", "Trial 3", "Trial 4", "Trial 5", "Trial 6", "Trial 7", "Trial 8", "Trial 9", "Trial 10"))) %>%
+ggplot(., aes(x = Trial, y = mean, color = Extremum))+
+  theme_classic()+
+  theme(legend.position = "", 
+        axis.text.x = element_text(angle = 45, hjust = 1), 
+        strip.background = element_rect(colour = "white", fill = "grey95", size = 1), 
+        panel.background=element_blank(), 
+        panel.border=element_rect(colour="grey95",size = 0.1, fill = NA), 
+        axis.text = element_text(size = 10), 
+        axis.title = element_text(size = 12), 
+        strip.text = element_text(size = 12))+
+  xlab(xlab_trial)+
+  ylab(ylab_extr)+
+  geom_point(size = 3)+
+  geom_errorbar(aes(ymin = lower_CI, ymax = upper_CI), width = 0.4)+
+  scale_color_manual(values = c("Summer" = axl_ectr_colors[1], "Winter" = axl_ectr_colors[3]), 
+                     labels = c("Summer", "Winter"), name = "")+
+  facet_wrap(. ~ Extremum)
+
+# calculate root mean square error of palaeotemperature estimates
+
+original_mean <- data.frame(Extremum = c("Minimum", "Maximum"), 
+                            original_mean = inv_model$mean[inv_model$Trial == "Original data"])
+
+rmse_in <- full_join(inv_model, original_mean, by = "Extremum") %>%
+  filter(!Trial == "Original data")
+
+rmse_axl66_model_extrema <- rmse(rmse_in$original_mean, rmse_in$mean)
+
+# calculate confidence interval of the inverse model for comparison
+
+mean_inv_model_error <- mean(inv_model$upper_CI - inv_model$lower_CI)
+
+```
+\newpage
+```{r d18Odw_plot, fig.cap = "Reconstructed oxygen isotope composition of drinking water ($\\delta^{18}$O$_{\\textrm{dw}}$) are similar to in summer and slightly lower in winter than estimates of modern day precipitation oxygen isotope values ($\\delta^{18}$O$_{\\textrm{precip}}$) estimated for the location of the site (line) and a surrounding area of 50 km radius (shaded ribbon, estimates made using the OIPC [@Bowen2003]). Highest and lowest $\\delta^{18}$O$_{\\textrm{precip}}$ values in a 50 km radius were approximated as the $\\delta^{18}$O$_{\\textrm{precip}}$ values at highest and lowest elevation - Gorbeia Mountain (1,482 m a.s.l.) and Bilbao (19 m a.s.l.) respectively. "}
+
+# plot d18Odw estimates against modern d18Oprecip interpolations
+
+temp <- read.csv("../../reconstruct_temperature/output/Axlor_seasonal_T_reconstruction.csv")
+
+# modern d18Oprecip from inferred from OIPC
+# (https://wateriso.utah.edu/waterisotopes/pages/data_access/oipc.html)
+
+modern_d18O_dw <- data.frame(type = c("Summer", "Mean", "Winter"), 
+                            # Axlor
+                            modern_d18O_dw = c(-1.5, -6.2, -8.9), 
+                            # gorbeia mountain (lowest d18Oprecip, highest elevation in 50 km radius)
+                            modern_d18O_dw_min = c(-3.4, -9.3, -11.9), 
+                            # bilbao (highest d18O, lowest elevation in 50 km radius)
+                            modern_d18O_dw_max = c(-1.3, -5.9, -8.7))
+
+temp <- left_join(temp, modern_d18O_dw, by = "type")
+
+# reorder factor levels for plotting order
+temp <- temp %>%
+  mutate(type = factor(type, levels = c("Summer", "Mean", "Winter")))
+
+# add x coordinates for modern d18Odw shaded boxes
+temp <- temp %>%
+  arrange(type, Layer) %>%
+  mutate(Layer_x = rep(c(0,0,3.6),3))
+
+# make color palette
+axl_ectr_colors <- c("#70F0B3", "#0DA48D", "#114847")
+
+# axis label
+ylab_dw <- expression(italic(delta)^18*'O'['dw']*' (\u2030 VSMOW)' )
+
+# make plot
+tplot <- ggplot(temp, aes(x = Layer, y = d18O_dw, colour = type))+
+  scale_x_discrete(breaks = waiver(),limits = c("III","IV","VI"))+
+  ylim(-20,2)+
+  theme_classic()+
+  theme(legend.position = "bottom", 
+        strip.background = element_rect(colour = "white", fill = "grey95", size = 1), 
+        panel.background=element_blank(),
+        panel.border=element_rect(colour="grey95",size = 0.1, fill = NA))+
+  ylab(ylab_dw)+
+  coord_cartesian(clip = 'off') +
+  geom_ribbon(data = temp, aes(x = Layer_x, ymin = modern_d18O_dw_min, 
+                               ymax = modern_d18O_dw_max, 
+                               fill = type), color = NA, alpha = 0.1)+
+  geom_hline(data = temp, aes(yintercept = modern_d18O_dw, color = type), 
+             lwd = 1, alpha = 0.5)+
+  geom_text(data = temp, aes(x = 3.05, y = modern_d18O_dw + 1, label = "modern"), 
+            hjust = 0, colour = "lightgrey", size = 2.5)+
+  geom_point(size = 3)+
+  geom_linerange(aes(y = T, ymin = d18O_dw - d18O_dw_error, ymax = d18O_dw + d18O_dw_error, x = Layer), size = 1)+
+  scale_color_manual(values = c("Summer" = axl_ectr_colors[1], 
+                                "Mean" = axl_ectr_colors[2], 
+                                "Winter" = axl_ectr_colors[3]), 
+                     labels = c("summer", "mean annual", "winter"), name = "")+
+  scale_fill_manual(values = c("Summer" = axl_ectr_colors[1], 
+                               "Mean" = axl_ectr_colors[2], 
+                                "Winter" = axl_ectr_colors[3]), 
+                     labels = c("summer", "mean annual", "winter"), name = "")+
+  facet_wrap(. ~ type)
+
+tplot
+
+```
+
+\newpage
+
+
+```{r carbonates, fig.cap = "Sequential carbon (hollow symbols) and oxygen (filled symbols) isotope measurements of *Bos/Bison* tooth enamel bioapatite carbonate samples colored by Layer reveal little seasonal or inter-individual variability in carbon isotope values. ", fig.width = 7, fig.height = 5.5}
+
+# plot sequential d18O and d13C from tooth enamel carbonates
+
+# read wide format carbonate isotope data
+carb_wide <- read.csv("../data/AXL_carbonate_d13C_d18O.csv")
+
+# axis labels
+ylab_name_o_carb <- expression(italic(delta)^18*'O'['carb']*' (\u2030 VSMOW)' )
+ylab_name_c_carb <- expression(italic(delta)^13*'C'['carb']*' (\u2030 VPDB)' )
+
+# set coefficient for scaling d13C and d18O y-axes
+coeff <- 31
+
+# reshape data to longer format
+carb <- carb_wide %>%
+  mutate(d13C = d13C + coeff) %>%
+  pivot_longer(cols = c(d13C, d18O_carb_VSMOW), names_to = "isotope", values_to = "isotope_value")
+
+# plot
+ggplot(carb, aes(x = dist_ERJ, color = Layer, shape = isotope, y = isotope_value))+
+  theme_classic()+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1), 
+        strip.background = element_rect(colour = "white", fill = "grey95", size = 1), 
+        panel.background=element_blank(), 
+        panel.border=element_rect(colour="grey95",size = 0.1, fill = NA), 
+        axis.text = element_text(size = 10), 
+        axis.title = element_text(size = 12), 
+        strip.text = element_text(size = 12), 
+        legend.position = c(0.6, 0.15), legend.box = "horizontal")+
+  geom_line(lwd = 2, alpha = 0.4)+
+  geom_point(size = 3)+
+  scale_y_continuous(name = ylab_name_o,
+                     sec.axis = sec_axis(~.-coeff, name = ylab_name_c_carb))+
+  xlab("mm from ERJ")+
+  xlim(50,0)+
+  scale_color_manual(values = c("III" = "#46ACC8", 
+                                "IV" = "#19678B", 
+                                "VI" = "#1E243A"))+
+  scale_shape_manual(values = c("d13C" = 18, "d18O_carb_VSMOW" = 16), 
+                     name = "Isotope",
+                     labels = c(expression(italic(delta)^13*'C'), 
+                              c(expression(italic(delta)^18*'O'))))+
+  facet_wrap(. ~ Tooth)
+
+```
+
+\newpage
+```{r c_v_o, fig.cap = "Annual means of bioapatite oxygen and carbon stable isotope delta values from *Bos/Bison* teeth do not show a detectable corrlation. Each point represents a single specimen, with an OLS linear model represented by a best-fit line and shaded 95% confidence interval to illustrate the lack of correlation. Spearman correlation shows a correlation coefficient ($\\rho$) close to 0 and p = 0.71, indicating that no linear or monotic relationship is present. Error bars represent measurement precision." , fig.width = 7, fig.height = 5}
+
+# check correlation between d13C and d18O using mean values per tooth
+
+# calculate d13C means
+c_summary <- carb_wide %>%
+  group_by(Tooth) %>%
+  summarise_at(c("d13C"), mean, na.rm = TRUE)
+
+# read d18O means
+o_means <- read.csv("../data/AXL_d18O_unmodelled_extrema_and_mean_annual.csv")
+
+o_means <- o_means %>%
+  filter(extremum == "MAT.raw.2point") %>%
+  select(Layer, Tooth, d18O_phos, SD) %>%
+  rename(d18O_SD = SD)
+
+co_summary <- full_join(c_summary, o_means, by = "Tooth") %>%
+  mutate(d13C_SD = 0.09)
+
+# calculate linear model
+
+# axis label
+ylab_name_o_phos <- expression(italic(delta)^18*'O'['phos']*' (\u2030 VSMOW)' )
+
+# plot
+ggplot(co_summary, aes(x = d13C, y = d18O_phos))+
+  theme_classic()+
+  scale_color_manual(values = c("III" = "#46ACC8", 
+                                "IV" = "#19678B", 
+                                "VI" = "#1E243A"))+
+  geom_smooth(method = "lm", color = "#C2E0E3", fill = "#C2E0E3", alpha = 0.3)+
+  geom_point(aes(color = Layer), size = 3)+
+  geom_errorbar(aes(ymin = d18O_phos - d18O_SD, ymax = d18O_phos + d18O_SD, color = Layer), 
+                width = 0.01)+
+  geom_errorbarh(aes(xmin = d13C - d13C_SD, xmax = d13C + d13C_SD, color = Layer), 
+                height = 0.01)+
+  stat_cor(method = "spearman", label.x = -9.1, label.y = 18.3, cor.coef.name = "rho")+
+  ylab(ylab_name_o_phos)+
+  xlab(ylab_name_c_carb)
+
+
+```
+\newpage
+# Supplementary Tables
+
+<br>
+```{r c14_collagen, tab.cap = "Quality indicators of collagen preservation for the radiocarbon dated specimen AXL55. ", tab.id = "c14coll"}
+
+# make df of collagen quality control data of the radiocarbon dated collagen extract
+c14_collagen <- data.frame(OxA = "OxA-40151", 
+                           sample_ID = "AX.11E.255.128/AXL55", 
+                           taxon = "Bos/Bison",
+                           collagen_yield = 1.1, 
+                           perc_C = 32.4, 
+                           perc_N = 11.5,
+                           CN = 3.3, 
+                           d13C = -20.0, 
+                           d15N = 6.4)
+# start flextable
+c14_table <- c14_collagen %>%
+  flextable(., col_keys = colnames(c14_collagen)) %>%
+  set_header_labels(., OxA = "OxA", 
+                       sample_ID = "Sample ID", 
+                       taxon = "Taxon", 
+                       collagen_yield = "% yield", 
+                       perc_C = "% C", 
+                       perc_N = "% N",
+                       CN = "C/N", 
+                       d13C = "d13C", 
+                       d15N = "d15N")
+
+# keep trailing zero in d13C
+c14_table <- set_formatter( x = c14_table,
+        d13C = function(x) sprintf("%.01f", x))
+
+# set up special characters in column names
+c14_table <- compose(c14_table, i = 1, j = "d13C", part = "header",
+    value = as_paragraph(as.character("\u03B4"),as_sup("13"), "C"))
+
+c14_table <- compose(c14_table, i = 1, j = "d15N", part = "header",
+    value = as_paragraph(as.character("\u03B4"),as_sup("15"), "N"))
+
+# italicize taxon name
+
+c14_table <- italic(c14_table, j = 3, part = "body")
+
+# print table
+c14_table %>%
+  autofit(.)
+
+```
+<br>
+
+```{r dw_t_table, tab.cap = "Overview of estimates made for drinking water oxygen isotope values and palaeotemperatures for summer, winter and annual means of each studied archaeological layer. "}
+
+# table of d18Odw reconstructions
+
+# start flextable
+temp_table <- temp %>%
+  select(-modern_d18O_dw) %>%
+  mutate(type = str_replace_all(type, "Mean", "Mean annual")) %>%
+  flextable(., col_keys = colnames(temp)[1:6]) %>%
+  set_header_labels(., Layer = "Layer", 
+                       type = "Record type", 
+                       d18O_dw = "d18O_dw", 
+                       d18O_dw_error = "d18O_dw_error", 
+                       T = "Temperature", 
+                       T_error = "T error")
+
+# add special characters in column headers
+temp_table <- compose(temp_table, i = 1, j = "d18O_dw", part = "header",
+    value = as_paragraph(as.character("\u03B4"),as_sup("18"), "O", as_sub("dw")))
+
+temp_table <- compose(temp_table, i = 1, j = "d18O_dw_error", part = "header",
+    value = as_paragraph(as.character("\u03B4"),as_sup("18"), "O", as_sub("dw"), " error"))
+
+# print table
+temp_table %>%
+  autofit(.)
+
+```
+
+\newpage
+
+# References
+
+
+
