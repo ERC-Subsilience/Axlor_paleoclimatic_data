@@ -73,7 +73,7 @@ Table S2: Results of $\delta$^18^O~dw~ and palaeotemperature estimation.
 
 **Other Supplementary Material for this manuscript includes the following:**
 
-Data and code to reproduce the manuscript files, figures and analyses are available at https://github.com/ERC-Subsilience. 
+Data and code to reproduce the manuscript files, figures and analyses are available at https://github.com/ERC-Subsilience/Axlor_paleoclimatic_data. 
 :::
 
 \newpage
